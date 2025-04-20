@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    // 基础设置
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+
+    // Vue 特性支持
+    "jsx": "preserve",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+
+    // 路径别名支持
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    // 输出支持
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "lib": ["ESNext", "DOM"],
+    "types": ["node"]
+  },
+
+  // 指定哪些文件参与 TS 编译
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules", "dist"]
+}
